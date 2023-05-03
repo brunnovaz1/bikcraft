@@ -1,0 +1,61 @@
+.seguros-bg {
+  background: var(--cor-11);
+}
+.seguros{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+#seguros .seguros{         /* apenas na pagina seguro que tem esse #id */
+  padding-top: 0px;
+}
+.seguros h2{
+grid-column: 1/-1;
+}
+.seguros-item{
+  background-color: var(--cor-12);
+  padding: 32px 32px 32px 60px;
+  display: grid;
+  grid-template-columns: 1fr auto;  /* ocupa todo tamanho do elemento */
+border-radius: 4px;
+}
+.seguros-item h3{
+  margin-bottom: 40px;
+}
+.seguros-item span{
+  grid-column: 2;
+  display: block;   /* embaixo, não ao lado */
+  text-align: right;
+}
+.seguros-item ul{
+grid-column: 1/-1;    /* ocupar toda linha */
+margin-bottom: 32px;
+}
+.seguros-item a{
+  grid-column: 1/-1;
+}
+.seguros-item li{            /* coloca o check ao lado */
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.seguros-item li{
+  margin-bottom: 20px;
+}
+.seguros-item li::before{
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 9px;
+  background-image: url(../img/icones/lista.svg);
+  position: absolute;
+  left: -21px;  
+}
+@media(max-width:800px){    /* limitar o botao esta no css dele */
+  .seguros{
+    grid-template-columns: 1fr;
+  }
+}

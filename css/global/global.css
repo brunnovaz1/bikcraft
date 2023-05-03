@@ -1,0 +1,31 @@
+body {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111111;
+}
+h1,
+h2,
+h3,
+h4,
+ul,
+p,
+blockquote,
+dd {
+  margin: 0px; /* tinha uma margem que fica por padrao entre o ul e o h1 */
+}
+ul {
+  /* margin: 0px; como foi colocada no h1, pode tirar */
+  padding: 0px;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit; /* herda a cor do pai */
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+img[src$=".jpg"]{    /* apenas elementos com esse final/formato */
+border-radius: 4px;
+}

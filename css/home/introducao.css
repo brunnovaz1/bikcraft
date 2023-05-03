@@ -1,0 +1,52 @@
+.introducao-bg {
+  background-color: var(--cor-12);
+  box-shadow: inset 0 -120px var(--cor-0); /* sombra interna, negativo fica embaixo */
+}
+.introducao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 40px;
+ /*  box-sizing: border-box; soma os paddings
+  max-width: 1200px;
+  padding-left: 20px;        substituido pela class container
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;  L/R aumentando a janela centraliza tudo */
+}
+.introducao-conteudo{ 
+  align-self: end;  /* alinha itens na parte de baixo */
+  padding-bottom: 200px; /* 80+120(sombra) usar apenas bottom para padronizar */
+}
+.introducao img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* terá 100% do container e não irá distorcer */
+  border-radius: 4px;
+}
+.introducao h1 {
+  margin-bottom: 32px;
+}
+.introducao p {
+  margin-bottom: 20px;
+}
+@media (max-width: 800px) {
+  .introducao-bg {
+    background: var(--cor-12);
+    padding-top: 40px;
+    box-shadow: inset 0 -60px var(--cor-0);
+  }
+  .introducao{
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .introducao h1 {
+    margin-bottom: 16px;
+  }
+  .introducao-conteudo{
+  padding-bottom: 0px;
+  }
+  .introducao img{
+   height: 300px;
+   width: 100%;
+  }
+}
