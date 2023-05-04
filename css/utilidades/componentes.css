@@ -16,10 +16,9 @@
   color: var(--cor-p5);
   max-width: max-content;    /* limita ao tamanho do texto */
   font: 600 1.125rem/1.33 "Poppins", sans-serif;
-  /*   font-size: 18px;
-  line-height: 1.33;
-  font-family: 'Poppins';
-  font-weight: 600; */
+  max-width: max-content;
+  border: none;
+  cursor: pointer;
 }
 .botao.seta{
   display: flex;
