@@ -29,7 +29,7 @@
   background: var(--cor-0);
   box-shadow: 0 0 0 2px #fea;
 }
-.form.col-2{
+.col-2{
   grid-column: span 2;
 }
 @media (max-width:600px){
